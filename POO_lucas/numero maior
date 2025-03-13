@@ -1,0 +1,14 @@
+public static void main(String[] args) {
+        int valor1 = int.parseInt(args[0]);
+        int valor2 = int.parseInt(args[1]);
+
+        if(valor1 > valor2){
+            System.out.println(valor1 + " é maior!");
+        }
+        else if (valor1 == valor2){
+            System.out.println("Ambos tem o mesmo valor")
+        }
+        else{
+            System.out.println(valor2 + " é maior!");
+        }
+    }
