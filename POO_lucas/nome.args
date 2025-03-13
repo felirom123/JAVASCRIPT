@@ -1,0 +1,8 @@
+public class exercicio{
+    public static void main(String[] args) {
+        String nome1 = args[0];
+        String nome2 = args[1];
+
+        System.out.println("primeiro nome" + nome1 + " segundo nome " + nome2);
+    }
+}
