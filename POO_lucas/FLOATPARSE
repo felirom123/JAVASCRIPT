@@ -1,0 +1,8 @@
+public class exercicio{
+    public static void main(String[] args) {
+        float valor1 = Float.parseFloat(args[0]);
+        float valor2 = Float.parseFloat(args[1]);
+
+        System.out.println("Total " + (valor1 + valor2));
+    }
+}
