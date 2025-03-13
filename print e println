@@ -1,9 +1,0 @@
-public class exercicio{
-    public static void main(String[] args){
-        //o Print nao tem quebra de linha, ele imprime um valor do lado do outro.
-        System.out.print("teste");
-
-        // o Println ja tem quebra de linha, entao ele nao imprime do lado , e sim em baixo.
-        System.out.println("teste");
-    }
-}
