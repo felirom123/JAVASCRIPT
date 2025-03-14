@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("-------------------------------");
+		System.out.println("Especificação   - Cod - Preço ");
+		System.out.println("Cachorro quente - 100 - 1.20");
+		System.out.println("Bauru Simples   - 101 - 1.30");
+		System.out.println("Bauru com Ovo   - 102 - 1.50");
+		System.out.println("Hamburguer      - 103 - 1.20");
+		System.out.println("Cheeseburguer   - 104 - 1.70");
+		System.out.println("Suco            - 105 - 2.20");
+		System.out.println("Refrigerante    - 106 - 1.00");
+		System.out.println("--------------------------------");
+		
+		System.out.println("Digite o codigo do produto: ");
+		int n1 = sc.nextInt();
+		
+		if(n1 >= 107 || n1 <= 99){
+		        System.out.println("Digite a quantidade do produto: ");
+		        float n2 = sc.nextFloat();
+		
+		    switch(n1){
+		        case 100:
+		         System.out.println("Valor a ser pago: " + (n2 * 1.20f));
+		            break;
+		        case 101:
+		            System.out.println("Valor a ser pago: " + (n2 * 1.30f));
+		         break;
+		        case 102:
+		         System.out.println("Valor a ser pago: " + n2 * 1.50f);
+		             break;
+		         case 103    :
+		            System.out.println("Valor a ser pago: " + n2 * 1.20f);
+		             break;
+		        case 104:
+		            System.out.println("Valor a ser pago: " + n2 * 1.70f);
+		             break;
+		        case 105:
+		            System.out.println("Valor a ser pago: " + n2 * 2.20f);
+		            break;
+		        case 106:
+		            System.out.println("Valor a ser pago: " + n2 * 1.00f);
+		            break;
+		        default:
+		            System.out.println("Item não encontrado no cardapio! ");
+		             break;
+		        }
+		}
+		
+	}
+}
