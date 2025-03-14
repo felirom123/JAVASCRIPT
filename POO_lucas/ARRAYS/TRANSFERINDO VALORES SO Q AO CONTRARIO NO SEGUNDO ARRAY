@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    
+	   int vet1[] = new int[5];
+	   int vet2[] = new int[vet1.length];
+	   int k = vet1.length;
+	   
+	   for (int i = 0; i < k ; i++)
+	   {
+	       System.out.println("Digite o " + (i + 1) + "° numero.");
+	       vet1[i] = sc.nextInt();
+	   }
+	   
+	   for(int i = 0; i < k ; i++)
+	   {
+	       vet2[i] = vet1[k -1 -i];
+	   }
+	        System.out.println("Vetor 1");
+	        
+	   for (int i = 0; i < k  ; i++)
+	   {
+	       System.out.print(vet1[i]);
+	   }
+	   
+	   System.out.println("");
+	   System.out.println("Vetor 2");
+	   
+	   for(int i = 0; i < k; i++)
+	   {
+	       System.out.print(vet2[i]);
+	   }
+	}  
+}
