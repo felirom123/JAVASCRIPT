@@ -1,1 +1,24 @@
 
+import java.util.Scanner;
+public class exercicio{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Coloque o primeiro numero");
+        int n1 = scanner.nextInt();
+        System.out.println("Coloque o segundo numero");
+        int n2 = scanner.nextInt();
+        System.out.println("Coloque o terceiro numero");
+        int n3 = scanner.nextInt();
+        
+        if(n1 > n2 && n1 > n3){
+            System.out.println(n1 + " é maior");
+        }
+        else if(n2 > n1 && n2 > n3){
+            System.out.println(n2 + " é maior");
+        }
+        else {
+            System.out.println(n3 + " é maior");
+        }
+    }
+}
