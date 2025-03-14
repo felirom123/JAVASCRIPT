@@ -1,0 +1,17 @@
+public class receberargumentosParseFloat{
+    public static void main(String[] args) {
+        int valor1 = int.parseInt(args[0]);
+        int valor2 = int.parseInt(args[1]);
+        int valor3 = int.parseInt(args[2]);
+
+        if(valor1 > valor2 && valor1 > valor3){
+            System.out.println(valor1 + " é maior!");
+        }
+        else if (valor2 > valor2 && valor2 > valor3){
+            System.out.println(valor2 + " é maior!");
+        }
+        else{
+            System.out.println(valor3 + " é maior!");
+        }
+    }
+} 
